@@ -31,6 +31,7 @@ adminRoute.post('/driverRegistration', async(req, res) => {
         const registeredDriver = await newDriver.save(() => {
             console.log("Driver Rgistered Successfully");
         });
+        
         res.json(registeredDriver);
     } catch (error) {
         res.json({ "message": error });
