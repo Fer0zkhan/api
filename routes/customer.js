@@ -35,6 +35,7 @@ customerRoute.post('/customerRegistration', async(req, res) => {
 
 });
 
+// Login
 customerRoute.post('/customerLogin', async(req, res) => {
 
     //Validation
