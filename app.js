@@ -20,7 +20,7 @@ app.use('/driver', driverRoute);
 
 //DataBase Connectivity
 mongoose.connect(process.env.DATABASE_NAME, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
-    console.log("Database connection Ready");
+    console.log("Database connection successfully");
 });
 //LocalHost Server
 app.listen(process.env.PORT || 3000, () => console.log(`Server running at port ${process.env.PORT || 3000}`));
