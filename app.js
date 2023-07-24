@@ -23,5 +23,5 @@ mongoose.connect(process.env.DATABASE_NAME, { useNewUrlParser: true, useUnifiedT
     console.log("Database connection successfully");
 });
 
-//LocalHost Server
+//Server
 app.listen(process.env.PORT || 3000, () => console.log(`Server running at port ${process.env.PORT || 3000}`));
