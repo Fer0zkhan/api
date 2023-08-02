@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const historySchema = mongoose.Schema({
+const historySchema = new mongoose.Schema({
     customerId: {
         type: String,
         required: true
