@@ -18,7 +18,7 @@ app.use('/admin', adminRoute);
 app.use('/customer', customerRoute);
 app.use('/driver', driverRoute);
 
-//DataBase Connectivity
+//Database connectivity
 mongoose.connect(process.env.DATABASE_NAME, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log("Database connection successfully");
 });
