@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const expressSession = require('express-session');
 require('dotenv/config');
 
-//Import routes
+//Import Routes
 const adminRoute = require('./routes/admin');
 const customerRoute = require('./routes/customer');
 const driverRoute = require('./routes/driver');
