@@ -8,7 +8,6 @@ const { driverRegistraterValidation } = require('../validation/validation');
 //Drivar Registration
 adminRoute.post('/driverRegistration', async(req, res) => {
 
-    
     //Validation
     const { error } = driverRegistraterValidation(req.body);
     if (error) return res.status(400).send(error.details[0].message);
