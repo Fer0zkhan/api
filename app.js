@@ -10,7 +10,6 @@ const adminRoute = require('./routes/admin');
 const customerRoute = require('./routes/customer');
 const driverRoute = require('./routes/driver');
 
-
 //middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
