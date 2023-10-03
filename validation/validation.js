@@ -10,6 +10,7 @@ const customerRegistraterValidation = (data) => {
     });
     return customerRegisterSchema.validate(data);
 }
+
 const customerLoginValidation = (data) => {
     const customerLoginSchema = Joi.object({
         email: Joi.string().min(6).required().email(),
@@ -27,6 +28,7 @@ const driverRegistraterValidation = (data) => {
     });
     return driverRegisterSchema.validate(data);
 }
+
 const driverLoginValidation = (data) => {
     const driverLoginSchema = Joi.object({
         email: Joi.string().min(6).required().email(),
