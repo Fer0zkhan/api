@@ -12,7 +12,8 @@ const customerRoute = require('./routes/customer');
 const driverRoute = require('./routes/driver');
 
 //middleware
-
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use('/admin', adminRoute);
 app.use('/customer', customerRoute);
